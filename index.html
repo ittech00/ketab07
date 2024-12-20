@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دسته‌بندی کتاب‌ها</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+        .category {
+            margin: 20px 0;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .category:hover {
+            color: blue;
+        }
+        .book-list {
+            list-style-type: none;
+        }
+        .book-list li {
+            margin-bottom: 10px;
+        }
+        .book-page img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .book-page {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>دسته‌بندی کتاب‌ها</h1>
+
+    <div class="category">
+        <a href="fiction.html">کتاب‌های داستانی</a>
+    </div>
+    <div class="category">
+        <a href="nonfiction.html">کتاب‌های غیرداستانی</a>
+    </div>
+
+    <!-- صفحه کتاب‌های داستانی -->
+    <div id="fiction-page" class="book-page">
+        <h2>کتاب‌های داستانی</h2>
+        <div class="book-list">
+            <li>
+                <img src="fiction1.jpg" alt="کتاب داستان 1">
+                <span>کتاب داستان 1</span>
+            </li>
+            <li>
+                <img src="fiction2.jpg" alt="کتاب داستان 2">
+                <span>کتاب داستان 2</span>
+            </li>
+        </div>
+    </div>
+
+    <!-- صفحه کتاب‌های غیرداستانی -->
+    <div id="nonfiction-page" class="book-page">
+        <h2>کتاب‌های غیرداستانی</h2>
+        <div class="book-list">
+            <li>
+                <img src="nonfiction1.jpg" alt="کتاب غیرداستانی 1">
+                <span>کتاب غیرداستانی 1</span>
+            </li>
+            <li>
+                <img src="nonfiction2.jpg" alt="کتاب غیرداستانی 2">
+                <span>کتاب غیرداستانی 2</span>
+            </li>
+        </div>
+    </div>
+
+</body>
+</html>
